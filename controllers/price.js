@@ -45,7 +45,7 @@ priceRouter.post('/', async (req, res, next) => {
       additional: { group: '5', services: [ 'specialLuggage', 'animal' ] }
     } */
 
-    const browser = await puppeteer.launch(); 
+    const browser = await puppeteer.launch({args: ['--no-sandbox']}); 
     const page = await browser.newPage(); 
     const priceObject = req.body; 
 
