@@ -25,6 +25,7 @@ mongoose.connect(config.MONGODB_URI, { useNewUrlParser: true , useUnifiedTopolog
 // midlleware goes here
 /* app.use(express.static(path.join(__dirname, '/public'))); */
 app.use(express.static('public'));
+app.use(express.static('build'))
 app.use(cors())
 app.use(bodyParser.json())
 app.use(middleware.regLogger)
