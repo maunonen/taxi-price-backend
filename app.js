@@ -32,6 +32,7 @@ app.use(middleware.regLogger)
 
 //Routers goes here 
 
+
 app.use('/api/users', userRouter)
 app.use('/api/login', loginRouter)
 app.use('/api/price', priceRouter)
