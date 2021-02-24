@@ -56,16 +56,23 @@ priceRouter.post('/', async (req, res, next) => {
     console.log(priceObject); 
     const content = await complie('priceListYellow', priceObject); 
     await page.setContent(content); 
-    await page.emulateMediaType('screen'); 
-    await page.pdf({
+    /* add css style to page  */
+    console.log(`Current directory: ${process.cwd()}`);
+    /* await page.emulateMediaType('screen');  */
+    await page.addStyleTag({path:'public/styles/styles.css'})
+    const pdf = await page.pdf({
       path : 'mypdf.pdf', 
       format : 'A4', 
-      printBackground : true 
+      printBackground: true, 
+      landscape: true
     })
-    console.log('done')
     await browser.close() 
     
-    res.json({ success : 'POST price 3'})
+    /* res.json({ success : 'POST price 3'}) */
+    res.set({ 'Content-Type': 'application/pdf', 'Content-Length': pdf.length })
+    res.send(pdf)
+    console.log(pdf);
+
   } catch (err){
     console.log(err)
   }

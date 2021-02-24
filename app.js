@@ -24,19 +24,13 @@ mongoose.connect(config.MONGODB_URI, { useNewUrlParser: true , useUnifiedTopolog
   
 // midlleware goes here
 /* app.use(express.static(path.join(__dirname, '/public'))); */
-app.use(express.static('public'));
+app.use(express.static('public'))
 app.use(express.static('build'))
 app.use(cors())
 app.use(bodyParser.json())
 app.use(middleware.regLogger)
 
 //Routers goes here 
-/* some comment */
-/* some comment */
-/* some comment */
-/* some comment */
-/* some comment */
-/* some new comment Finnaly*/
 
 app.use('/api/users', userRouter)
 app.use('/api/login', loginRouter)

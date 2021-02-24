@@ -1,0 +1,199 @@
+.creator-container {
+  @extend .container; 
+  
+}
+.creator-form {
+  flex : 1; 
+}
+
+.creator-template {
+  flex : 2; 
+  /* position: sticky; */ 
+}
+.creator-table__title {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.creator-table__min-price {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  &--pb-1 {
+    @extend .pb-1;
+  }
+  &--pb-2 {
+    @extend .pb-2;
+  }
+  &--pb-3 {
+    @extend .pb-3;
+  }
+
+  &--pb-4 {
+    @extend .pb-4;
+  }
+
+}
+
+.creator-table__row-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.creator-from__title {
+  
+}
+
+.creator-template {
+  margin-top: 20px;
+  height: 100%;
+  background-color: yellow;
+}
+
+.creator-template--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.creator-header {
+  background-color: yellow;
+}
+
+.creator-header__date {
+  text-align: right;
+}
+
+.creator-header__title {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.creator-table__underline::after {
+  background-color: black;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.creator-header__title::after {
+  background-color: black;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.creator-header__min-price {
+  text-align: center;
+  background-color: yellow;
+}
+
+.creator-table {
+
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif; 
+  > table {
+    margin: 0px auto;
+    padding: 40px;
+  }
+}
+.creator-table__plus-icon {
+  fill: black;
+  width: 40px;
+  height: 40px;
+}
+
+.creator-table__eur {
+  height: 60px;
+}
+
+
+.creator-table__column-one {
+  width: 15%;
+}
+.creator-table__column-two {
+  width: 45%;
+}
+.creator-table__column-three {
+  width: 30%;
+}
+
+.creator-table__plus {
+  /* text-align: left; */
+  padding-left: 100px;
+  vertical-align: middle;
+}
+
+.creator-table__row {
+  font-size: 2.5rem;
+  font-weight: 700;
+} 
+
+.creator-table__icon {
+  fill: black;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+
+
+.creator-table__icon--time {
+  width: 50px;
+  height: 50px;
+}
+
+.creator-table__row--underline {
+  display: table-cell;    
+  border-bottom: 2px solid black !important;
+  
+  /* background-color: black;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  margin: 10px auto; */
+}
+
+.creator-footer {
+  background-color: black;
+  display: flex;
+  padding: 5px 40px;
+
+
+}
+
+.creator-footer__adress {
+  flex: 3;
+}
+
+.creator-footer__adress > p {
+  color: yellow !important;
+}
+
+.creator-footer__additional {
+  flex: 2;
+  
+  p {
+    color: yellow;
+  }
+} 
+.creator-footer__icon {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.form-row__checkbox-label {
+  padding-left: 5px;
+  font-size: 0.9rem;
+}

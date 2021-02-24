@@ -4,80 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hinnasto</title>
-  <style>
-    body {
-      background-color: yellow;
-    }
-  </style>
-
 </head>
 <body>
-  <div className="creator-template creator-template--sticky">
-        <div className="creator-header pr-4">
-          <p className="creator-header__date pb-0 mb-0">{{priceDate}}</p>
+  <div class="creator-template">
+        <div class="creator-header pr-4">
+          <p class="creator-header__date pb-0 mb-0">{{priceDate}}</p>
         </div>
-        <div className="creator-table">
-          <table className="pt-0">
+        <div class="creator-table">
+          <table class="pt-0">
             <colgroup>
-              <col className="creator-table__column-one"/>
-              <col className="creator-table__column-two"/>
-              <col className="creator-table__column-three"/>
+              <col class="creator-table__column-one"/>
+              <col class="creator-table__column-two"/>
+              <col class="creator-table__column-three"/>
             </colgroup>
             <tbody>
 
-            <tr className="creator-table__row">
-              <td colSpan="3" className="creator-table__title mt-0 pt-0">Hinnasto</td>
+            <tr class="creator-table__row">
+              <td colspan="3" class="creator-table__title mt-0 pt-0">Hinnasto</td>
             </tr>
-            <tr className="creator-table__row">
-              <td colSpan="3">
-                <div className="creator-table__underline"></div> 
+            <tr class="creator-table__row">
+              <td colspan="3">
+                <div class="creator-table__underline"></div> 
               </td>
             </tr>
-            <tr className="creator-table__row">
-              <td colSpan="3" className="creator-table__min-price creator-table__min-price--pb-2">Minimihinta: {{minPrice}}</td>
+            <tr class="creator-table__row">
+              <td colspan="3" class="creator-table__min-price creator-table__min-price--pb-2">Minimihinta: {{minPrice}}</td>
             </tr>
-            <tr className="creator-table__row">
+            <tr class="creator-table__row">
               <td>
-                <Switch className="creator-table__icon"/>
+                <Switch class="creator-table__icon"/>
               </td>
               <td>Aloitusmaksu</td>
               <td>{{startPrice}} <span>&euro;</span></td>
             </tr>
             <tr>
-              <td className="creator-table__plus" colSpan="3">
-                <Plus className="creator-table__plus-icon"/>
+              <td class="creator-table__plus" colspan="3">
+                <Plus class="creator-table__plus-icon"/>
               </td>
             </tr>
-            <tr className="creator-table__row">
+            <tr class="creator-table__row">
               <td>
-                <Road className="creator-table__icon"/>
+                <Road class="creator-table__icon"/>
               </td>
               <td>Matka</td>
               <td>{{distance}} <span>&euro;</span>/km</td>
             </tr>
             <tr>
-              <td className="creator-table__plus" colSpan="3">
-              <Plus className="creator-table__plus-icon"/>
+              <td class="creator-table__plus" colspan="3">
+              <Plus class="creator-table__plus-icon"/>
               </td>
             </tr>
-            <tr className="creator-table__row">
+            <tr class="creator-table__row">
               <td>
                 <Time
-                  className="creator-table__icon--time"
+                  class="creator-table__icon--time"
                   fill="none"
                 />
               </td>
               <td>Aika</td>
               <td>{{duration}} <span>&euro;</span>/min</td>
             </tr>
-            <tr className="creator-table__row">
-              <td colSpan="3">
-                <div className="creator-table__underline"></div> 
+            <tr class="creator-table__row">
+              <td colspan="3">
+                <div class="creator-table__underline"></div> 
               </td>
             </tr>
-            <tr className="creator-table__row">
+            <tr class="creator-table__row">
               <td>
-                <Zone className="creator-table__icon"/>
+                <Zone class="creator-table__icon"/>
               </td>
               <td>Vyöhyke</td>
               <td>{{zone}} <span>&euro;</span></td>
@@ -85,23 +79,12 @@
             </tbody>
           </table>
         </div>  
-        <div className="creator-footer">
-          <div className="creator-footer__adress">
-            <p className="mt-1">{{city}}, {{street}}, {{index}} {{city}}</p>
+        <div class="creator-footer">
+          <div class="creator-footer__adress">
+            <p class="mt-1">{{city}}, {{street}}, {{index}} {{city}}</p>
             <p>Puh.{{phone}} ({{phoneOpenOurs}}), {{email}} ({{emailOpenOurs}})</p>
 
           </div>
-          {{!-- <div className="creator-footer__additional ml-1">
-            <p className="mt-1">Lisämaksut</p>
-              { luggage && <Luggage fill="yellow" className="creator-footer__icon mr-1"/> }
-              { delivery && <LuggageKg fill="yellow" className="creator-footer__icon mr-1"/> }
-              { animal && <Dog fill="yellow" className="creator-footer__icon mr-1"/>} 
-              { invalid && <Invalid fill="yellow" className="creator-footer__icon mr-1"/> }
-              { airport && <Plane fill="yellow" className="creator-footer__icon mr-1"/> }
-              { specialLuggage && <LuggageSpecial fill="yellow" className="creator-footer__icon mr-1"/>}
-              
-              { ((!!group && ( group > 9) || (group < 1) )) || <Body fill="yellow" amount = {group} className="creator-footer__icon"/>  }
-          </div> --}}
         </div>
       </div>
     </div>  
