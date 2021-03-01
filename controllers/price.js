@@ -33,11 +33,11 @@ hbs.registerPartial("Invalid", fs.readFileSync(
 hbs.registerPartial("Luggage", fs.readFileSync(
   path.join(__dirname, "../templates/svg/luggage.hbs"), "utf-8"),
 );
-hbs.registerPartial("SpecialLuggage", fs.readFileSync(
+hbs.registerPartial("SpecialLuggage", fs.readFileSync(  
   path.join(__dirname, "../templates/svg/specialLuggage.hbs"), "utf-8"),
 );
 hbs.registerPartial("LuggageKg", fs.readFileSync(
-  path.join(__dirname, "../templates/svg/LuggageKg.hbs"), "utf-8"),
+  path.join(__dirname, "../templates/svg/luggageKg.hbs"), "utf-8"),
 );
 hbs.registerPartial("Animal", fs.readFileSync(
   path.join(__dirname, "../templates/svg/animal.hbs"), "utf-8"),
