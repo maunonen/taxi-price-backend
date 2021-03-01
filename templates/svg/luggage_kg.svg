@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102" height="77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <style type="text/css">.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style>
+ <g>
+  <title>background</title>
+  <rect id="canvas_background" x="-1" y="-1" width="45" height="30" fill="none"/>
+ </g>
+ <g stroke="null">
+  <path d="m41.163 17.171h-27.812c-5.8653 0-10.35 3.6304-10.35 8.3779v36.304c0 4.7475 4.9014 8.2698 10.767 8.2947l18.293 0.07753z"/>
+  <rect x="30.601" y="17.171" width="41.402" height="53.06"/>
+  <path d="m89.254 17.171h-24.151l6.9003 53.06h17.251c5.8653 0 10.35-3.6304 10.35-8.3779v-36.304c0-4.7475-4.4852-8.3779-10.35-8.3779z"/>
+  <path d="m68.553 22.756h-34.502c-2.0701 0-3.4502-1.117-3.4502-2.7926v-5.5853c0-4.7475 4.4852-8.3779 10.35-8.3779h20.701c5.8653 0 10.35 3.6304 10.35 8.3779v5.5853c0 1.6756-1.3801 2.7926-3.4502 2.7926zm-31.052-5.5853h27.601v-2.7926c0-1.6756-1.3801-2.7926-3.4502-2.7926h-20.701c-2.0701 0-3.4502 1.117-3.4502 2.7926v2.7926z" stroke="null"/>
+  <path d="m13.35 73.023c-2.0701 0-3.4502-1.117-3.4502-2.7926v-2.7926c0-1.6756 1.3801-2.7926 3.4502-2.7926s3.4502 1.117 3.4502 2.7926v2.7926c0 1.6756-1.3801 2.7926-3.4502 2.7926z" stroke="null"/>
+  <path d="m89.254 73.023c-2.0701 0-3.4502-1.117-3.4502-2.7926v-2.7926c0-1.6756 1.3801-2.7926 3.4502-2.7926s3.4502 1.117 3.4502 2.7926v2.7926c0 1.6756-1.3801 2.7926-3.4502 2.7926z" stroke="null"/>
+ </g>
+ <text transform="scale(1.0138 .98636)" x="22.39785" y="56.763809" fill="#ffffff" font-family="sans-serif" font-size="27.104px" stroke="#000000" stroke-width="0" xml:space="preserve"><tspan font-family="Arial" font-size="37.333px" font-weight="bold">KG</tspan></text>
+</svg>

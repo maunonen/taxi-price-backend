@@ -32,34 +32,40 @@
             </tr>
             <tr class="creator-table__row">
               <td>
-                <Switch class="creator-table__icon"/>
+                {{!-- Partial  --}}
+                {{> Switch }}
+                {{!-- <Switch class="creator-table__icon"/> --}}
               </td>
               <td>Aloitusmaksu</td>
               <td>{{startPrice}} <span>&euro;</span></td>
             </tr>
             <tr>
               <td class="creator-table__plus" colspan="3">
-                <Plus class="creator-table__plus-icon"/>
+                  <svg class="creator-table__plus-icon" height="45px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M256,32C132.3,32,32,132.3,32,256s100.3,224,224,224s224-100.3,224-224S379.7,32,256,32z M384,272H272v112h-32V272H128v-32   h112V128h32v112h112V272z"/>
+                  </svg>
               </td>
             </tr>
             <tr class="creator-table__row">
               <td>
-                <Road class="creator-table__icon"/>
+                {{> Road}}
+                {{!-- <Road class="creator-table__icon"/> --}}
               </td>
               <td>Matka</td>
               <td>{{distance}} <span>&euro;</span>/km</td>
             </tr>
             <tr>
               <td class="creator-table__plus" colspan="3">
-              <Plus class="creator-table__plus-icon"/>
+              <svg class="creator-table__plus-icon" height="45px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M256,32C132.3,32,32,132.3,32,256s100.3,224,224,224s224-100.3,224-224S379.7,32,256,32z M384,272H272v112h-32V272H128v-32   h112V128h32v112h112V272z"/>
+              {{!-- <Plus class="creator-table__plus-icon"/> --}}
               </td>
             </tr>
             <tr class="creator-table__row">
               <td>
-                <Time
+                {{> Time }}
+                {{!-- <Time
                   class="creator-table__icon--time"
                   fill="none"
-                />
+                /> --}}
               </td>
               <td>Aika</td>
               <td>{{duration}} <span>&euro;</span>/min</td>
@@ -71,7 +77,8 @@
             </tr>
             <tr class="creator-table__row">
               <td>
-                <Zone class="creator-table__icon"/>
+                {{> Zone }}
+                {{!-- <Zone class="creator-table__icon"/> --}}
               </td>
               <td>Vyöhyke</td>
               <td>{{zone}} <span>&euro;</span></td>
@@ -83,7 +90,34 @@
           <div class="creator-footer__adress">
             <p class="mt-1">{{city}}, {{street}}, {{index}} {{city}}</p>
             <p>Puh.{{phone}} ({{phoneOpenOurs}}), {{email}} ({{emailOpenOurs}})</p>
+          </div>
+          <div class="creator-footer__additional ml-1">
+            <p class="mt-1">Lisämaksut</p>
+            {{#if true }}
+              {{> Invalid}}
+            {{/if}}
+            {{#if true }}
+              {{> Luggage}}
+            {{/if}}
+            {{#if true }}
+              {{> SpecialLuggage}}
+            {{/if}}
+            
+            {{#if true }}
+              {{> Luggage}}
+            {{/if}}
+            
+            {{#if true }}
+              {{> Animal}}
+            {{/if}}
 
+            {{#if true }}
+              {{> Body}}
+            {{/if}}
+
+            {{#if true }}
+              {{> Plane}}
+            {{/if}}
           </div>
         </div>
       </div>

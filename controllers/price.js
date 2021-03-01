@@ -7,12 +7,57 @@ const path = require('path');
 const moment = require('moment');
 const _ = require('lodash');
 
+
+/* Register partial  */
+
+hbs.registerPartial("Switch", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/switch.hbs"), "utf-8"),
+);
+
+hbs.registerPartial("Road", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/road.hbs"), "utf-8"),
+);
+
+hbs.registerPartial("Zone", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/zone.hbs"), "utf-8"),
+);
+
+hbs.registerPartial("Time", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/time.hbs"), "utf-8"),
+);
+
+
+hbs.registerPartial("Invalid", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/invalid.hbs"), "utf-8"),
+);
+hbs.registerPartial("Luggage", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/luggage.hbs"), "utf-8"),
+);
+hbs.registerPartial("SpecialLuggage", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/specialLuggage.hbs"), "utf-8"),
+);
+hbs.registerPartial("LuggageKg", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/LuggageKg.hbs"), "utf-8"),
+);
+hbs.registerPartial("Animal", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/animal.hbs"), "utf-8"),
+);
+hbs.registerPartial("Body", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/body.hbs"), "utf-8"),
+);
+hbs.registerPartial("Plane", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/plane.hbs"), "utf-8"),
+);
+
 const complie = async function (tempName, data) {
   
   const filePath = path.join(process.cwd(), 'templates', `${tempName}.hbs`); 
+  if (!filePath) {
+    throw new Error(`Could not find ${tempName}.hbs in generatePDF`);
+  }
   const html = await fs.readFile(filePath, 'utf-8'); 
   console.log(html);  
-  return hbs.compile(html)(data)
+  return hbs.compile(html)(data);
 }; 
 
 hbs.registerHelper('dataFormat', (value, format) => {
@@ -57,7 +102,7 @@ priceRouter.post('/', async (req, res, next) => {
     const content = await complie('priceListYellow', priceObject); 
     await page.setContent(content); 
     /* add css style to page  */
-    console.log(`Current directory: ${process.cwd()}`);
+    /* console.log(`Current directory: ${process.cwd()}`); */
     /* await page.emulateMediaType('screen');  */
     await page.addStyleTag({path:'public/styles/styles.css'})
     const pdf = await page.pdf({

@@ -393,6 +393,10 @@ section:nth-child(3) section:nth-child(3) {
   color: yellow !important;
 }
 
+.creator-footer__additional-caption {
+  color: yellow;
+}
+
 .creator-footer__additional {
   flex: 2;
 }

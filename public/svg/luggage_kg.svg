@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="102"
+   height="77"
+   version="1.1"
+   id="svg33"
+   sodipodi:docname="luggage_kg.svg"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
+  <metadata
+     id="metadata39">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs37" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="900"
+     id="namedview35"
+     showgrid="false"
+     inkscape:zoom="9.7688554"
+     inkscape:cx="39.847733"
+     inkscape:cy="44.465109"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg33" />
+  <style
+     type="text/css"
+     id="style10">.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style>
+  <g
+     id="g15">
+    <title
+       id="title12">background</title>
+    <rect
+       fill="none"
+       id="canvas_background"
+       height="79"
+       width="104"
+       y="-1"
+       x="-1" />
+  </g>
+  <path
+     stroke="null"
+     id="svg_2"
+     d="M 41.162717,17.17054 H 13.3505 C 7.48522,17.17054 3,20.80097 3,25.54845 v 36.30426 c 0,4.74748 4.9014194,8.269822 10.766647,8.294681 l 18.293059,0.07753 z"
+     sodipodi:nodetypes="csssscc" />
+  <rect
+     stroke="null"
+     id="svg_3"
+     height="53.060081"
+     width="41.401989"
+     y="17.17054"
+     x="30.60133" />
+  <path
+     stroke="null"
+     id="svg_4"
+     d="M 89.25416,17.17054 H 65.10299 l 6.900329,53.060081 17.250841,0 c 5.86528,0 10.3505,-3.63043 10.3505,-8.37791 V 25.54845 c 0,-4.74748 -4.48522,-8.37791 -10.3505,-8.37791 z"
+     sodipodi:nodetypes="sccssss" />
+  <g
+     stroke="null"
+     id="svg_5">
+    <path
+       stroke="null"
+       id="svg_6"
+       d="M 68.55316,22.75581 H 34.0515 c -2.0701,0 -3.45017,-1.11705 -3.45017,-2.79264 V 14.3779 c 0,-4.74748 4.48522,-8.37791 10.3505,-8.37791 h 20.701 c 5.86528,0 10.3505,3.63043 10.3505,8.37791 v 5.58527 c 0,1.67558 -1.38007,2.79264 -3.45017,2.79264 z M 37.50166,17.17054 H 65.10299 V 14.3779 c 0,-1.67558 -1.38007,-2.79264 -3.45017,-2.79264 h -20.701 c -2.0701,0 -3.45017,1.11705 -3.45017,2.79264 v 2.79264 z" />
+  </g>
+  <g
+     stroke="null"
+     id="svg_7">
+    <path
+       stroke="null"
+       id="svg_8"
+       d="m 13.3505,73.02326 c -2.0701,0 -3.45017,-1.11705 -3.45017,-2.79264 v -2.79264 c 0,-1.67558 1.38007,-2.79264 3.45017,-2.79264 2.0701,0 3.45017,1.11705 3.45017,2.79264 v 2.79264 c 0,1.67558 -1.38007,2.79264 -3.45017,2.79264 z" />
+  </g>
+  <g
+     stroke="null"
+     id="svg_9">
+    <path
+       stroke="null"
+       id="svg_10"
+       d="m 89.25416,73.02326 c -2.0701,0 -3.45017,-1.11705 -3.45017,-2.79264 v -2.79264 c 0,-1.67558 1.38007,-2.79264 3.45017,-2.79264 2.0701,0 3.45017,1.11705 3.45017,2.79264 v 2.79264 c 0,1.67558 -1.38007,2.79264 -3.45017,2.79264 z" />
+  </g>
+  <text
+     stroke="#000000"
+     transform="scale(1.0138257,0.98636283)"
+     xml:space="preserve"
+     text-anchor="start"
+     font-family="sans-serif"
+     font-size="27.1036px"
+     id="svg_15"
+     y="56.763809"
+     x="22.39785"
+     stroke-width="0"
+     fill="#ffffff"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.3333px;font-family:Arial;-inkscape-font-specification:'Arial Bold'"
+       id="tspan66">KG</tspan></text>
+</svg>
