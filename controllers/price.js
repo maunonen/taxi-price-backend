@@ -18,6 +18,10 @@ hbs.registerPartial("Road", fs.readFileSync(
   path.join(__dirname, "../templates/svg/road.hbs"), "utf-8"),
 );
 
+hbs.registerPartial("Plus", fs.readFileSync(
+  path.join(__dirname, "../templates/svg/plus.hbs"), "utf-8"),
+);
+
 hbs.registerPartial("Zone", fs.readFileSync(
   path.join(__dirname, "../templates/svg/zone.hbs"), "utf-8"),
 );
@@ -25,8 +29,6 @@ hbs.registerPartial("Zone", fs.readFileSync(
 hbs.registerPartial("Time", fs.readFileSync(
   path.join(__dirname, "../templates/svg/time.hbs"), "utf-8"),
 );
-
-
 hbs.registerPartial("Invalid", fs.readFileSync(
   path.join(__dirname, "../templates/svg/invalid.hbs"), "utf-8"),
 );
@@ -49,8 +51,14 @@ hbs.registerPartial("Plane", fs.readFileSync(
   path.join(__dirname, "../templates/svg/plane.hbs"), "utf-8"),
 );
 
+hbs.registerHelper('ifEqual', function(value1, value2, options) {
+  if(value1 === value2) {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
+
 const complie = async function (tempName, data) {
-  
   const filePath = path.join(process.cwd(), 'templates', `${tempName}.hbs`); 
   if (!filePath) {
     throw new Error(`Could not find ${tempName}.hbs in generatePDF`);
@@ -71,25 +79,6 @@ priceRouter.get('/', auth, async (req, res, next) => {
 
 priceRouter.post('/', async (req, res, next) => {
   try {
-
-    /* Body {
-      priceDate: '2021-02-11',
-      minPrice: '5',
-      startPrice: '5',
-      distance: '5',
-      duration: '5',
-      zone: '5',
-      city: 'Helsinki',
-      street: 'Myllykallionrinne 2D26',
-      index: '',
-      phone: '0443463077',
-      phoneOpenOurs: '10-20',
-      email: 'santari33@gmail.com',
-      emailOpenOurs: '10-20',
-      luggage: false,
-      additional: { group: '5', services: [ 'specialLuggage', 'animal' ] }
-    } */
-
     const browser = await puppeteer.launch({args: ['--no-sandbox']}); 
     const page = await browser.newPage(); 
     const priceObject = req.body; 
@@ -116,7 +105,6 @@ priceRouter.post('/', async (req, res, next) => {
     /* res.json({ success : 'POST price 3'}) */
     res.set({ 'Content-Type': 'application/pdf', 'Content-Length': pdf.length })
     res.send(pdf)
-    console.log(pdf);
 
   } catch (err){
     console.log(err)

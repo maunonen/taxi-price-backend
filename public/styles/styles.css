@@ -247,6 +247,10 @@ section:nth-child(3) section:nth-child(3) {
   /* position: sticky; */
 }
 
+table {
+  border-spacing: 0px;
+}
+
 .creator-table__title {
   font-size: 5rem;
   font-weight: bold;
@@ -281,6 +285,7 @@ section:nth-child(3) section:nth-child(3) {
 
 .creator-header__date {
   text-align: right;
+  padding-top: 10px;
 }
 
 .creator-header__title {
@@ -324,8 +329,9 @@ section:nth-child(3) section:nth-child(3) {
 
 .creator-table__plus-icon {
   fill: black;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  padding-left: 40px;
 }
 
 .creator-table__eur {
@@ -352,6 +358,7 @@ section:nth-child(3) section:nth-child(3) {
 
 .creator-table__row {
   font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -382,7 +389,8 @@ section:nth-child(3) section:nth-child(3) {
 .creator-footer {
   background-color: black;
   display: flex;
-  padding: 5px 40px;
+  padding: 5px 20px;
+  font-size: 1.3rem;
 }
 
 .creator-footer__adress {
@@ -405,8 +413,8 @@ section:nth-child(3) section:nth-child(3) {
 }
 
 .creator-footer__icon {
-  width: 30px;
-  height: 30px;
+  /* width: 30px; */
+  height: 50px;
 }
 
 .form-row__checkbox-label {
